@@ -4,13 +4,17 @@ import java.util.HashMap;
 
 public class Coach extends Employee {
 
-    public static HashMap<String, Integer> addtraningWithCoach(String coach, int sessions) {
-        Client bob = new Client();
-        Coach jim = new Coach();
-        jim.name = coach;
-        bob.traningWithCoach.put(coach, sessions);
-        System.out.println(bob.traningWithCoach);
-        return bob.traningWithCoach;
+    Coach(String NAME){ name = NAME; }
+
+    HashMap<Coach, Client> coachClients = new HashMap<>();
+
+    public  int addTraningWithCoach( String coachName, String clientName, int coachingSessions) {
+        for (Coach coach : coachClients) {
+            if (coach.name.equals(coachName)) {
+                coach.addTraningWithCoach(clientName, coachingSessions);
+                return 0;
+            }
+            return -1;
 
     }
 

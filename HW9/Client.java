@@ -4,13 +4,10 @@ import java.util.HashMap;
 
 public class Client extends Human{
 
-    int massageSessions;
-    HashMap<String, Integer> traningWithCoach = new HashMap<>();
+    Client(String NAME){ name = NAME; }
 
-    Client(){
-        name = "No Name";
-        massageSessions = 0;
-    }
+    int massageSessions;
+    HashMap<Coach, Integer> traningWithCoach = new HashMap<>();
 
 
 }

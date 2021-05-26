@@ -5,17 +5,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Manager.addClient("bob");
-        Coach.addtraningWithCoach("Jim", 10);
-        /*Massagist.addMassageSession(2);*/
-
-        /*       Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-        Manager.addClient(input);
-        Client n = new Client();
-        n.name = "Petro";
-        System.out.println(n.name);
-*/
     }
 }
 
