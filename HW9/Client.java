@@ -6,8 +6,8 @@ public class Client extends Human{
 
     Client(String NAME){ name = NAME; }
 
-    int massageSessions;
-    HashMap<Coach, Integer> traningWithCoach = new HashMap<>();
+    int massageSessions = 0;
+    HashMap<String, Integer> traningWithCoach = new HashMap<>();
 
 
 }
